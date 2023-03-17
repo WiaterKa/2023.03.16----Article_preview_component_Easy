@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: "Manrope", sans-serif;
@@ -19,16 +23,16 @@ body {
   background: #ffffff;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   border-radius: 10px;
-  height: 440px;
-  width: 327px;
+  height: 27.5rem;
+  width: 20.437rem;
 }
 
 @media only screen and (min-width: 750px) {
   .container {
     display: flex;
     flex-direction: row;
-    height: 280px;
-    width: 730px;
+    height: 17.5rem;
+    width: 45.625rem;
   }
 }
 
@@ -61,7 +65,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-inline: 32px;
+  padding-inline: 2rem;
 }
 
 @media only screen and (min-width: 750px) {
@@ -85,28 +89,28 @@ body {
 }
 
 h1 {
-  padding-top: 36px;
+  padding-top: 2rem;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: 0.2px;
   color: #48556a;
 }
 
 .p_main {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
   letter-spacing: 0.121875px;
   color: #6e8098;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
 }
 
 .personal-info {
   display: none;
   position: relative;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .personal-info::before {
@@ -114,10 +118,10 @@ h1 {
   content: "";
   position: absolute;
   top: 0;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   background-image: url("../images/avatar-michelle.jpg");
-  left: -30px;
+  left: -1.875rem;
   background-position: center;
   background-size: contain;
   border-radius: 50%;
@@ -131,20 +135,20 @@ h1 {
 
 .personal_primary {
   font-weight: 700;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
   letter-spacing: 0.121875px;
   color: #48556a;
-  margin-left: 32px;
+  margin-left: 2rem;
 }
 
 .personal_secondary {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
   letter-spacing: 0.121875px;
   color: #9daec2;
-  margin-left: 32px;
+  margin-left: 2rem;
 }
 
 @media only screen and (min-width: 750px) {
@@ -153,53 +157,48 @@ h1 {
   }
 }
 
-.share_img_personal {
+.share_img_personal .btn-2 {
   background: #ecf2f8;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* JS ELEMENTS */
 
 .pop-up-box {
-  height: 55px;
-  width: 248px;
+  height: 3.437rem;
+  width: 15.5rem;
   background: #48556a;
   box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 36px;
+  padding: 1rem 2.25rem;
   border-radius: 10px;
   position: absolute;
-  top: -70px;
-  left: 234px;
+  top: -4.375rem;
+  left: 14.625rem;
+  display: none;
 }
 
 .pop-up-box::after {
   content: "";
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: #48556a;
   position: absolute;
   left: 50%;
-  bottom: -10px;
+  bottom: -0.625rem;
   transform: translateX(-50%) rotate(45deg);
 }
 
 .nav {
-  height: 64px;
+  height: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   background: #48556a;
   border-radius: 0px 0px 10px 10px;
   align-items: center;
-  padding-inline: 32px;
+  padding-inline: 2rem;
 }
 
 @media only screen and (min-width: 750px) {
@@ -213,26 +212,28 @@ h1 {
 }
 
 .footer-socials {
-  margin-left: 21px;
+  margin-left: 1.3125rem;
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .p_footer {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 5px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.3125rem;
   color: #9daec2;
   text-transform: uppercase;
 }
 
-.share-img {
+.btn-2 {
   background: white;
   border-radius: 50%;
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  cursor: pointer;
 }
